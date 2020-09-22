@@ -11,11 +11,8 @@ import ShortList from '../../Components/ShortList/ShortList';
 const Main = (props) => {
     const [currentPage,setCurrentPage]=useState(1);
     const [newsPerPage]=useState(50);
-    useEffect(()=>{
-      
+    useEffect(()=>{ 
             props.initialize();
-        
-            
     },[]);
    
     const indexOfLastNews = currentPage * newsPerPage;
@@ -28,11 +25,23 @@ const Main = (props) => {
 
     return (
         <div className="main">
-            
-             
-            {<Route exact path="/" ><AllCities indexOfFirstNews={indexOfFirstNews} indexOfLastNews={indexOfLastNews} newsPerPage={newsPerPage} totalNews={props.cities.length} cities={currentCities} paginate={paginate}/></Route>}
-            {<Route path="/shortlisted"><ShortList cities={props.cities} newsPerPage={newsPerPage} totalNews={props.cities.length} shortcities={currentCities} paginate={paginate}/></Route>}
-            
+            {<Route exact path="/" >
+                <AllCities
+                 indexOfFirstNews={indexOfFirstNews} 
+                 indexOfLastNews={indexOfLastNews} 
+                 newsPerPage={newsPerPage} 
+                 totalNews={props.cities.length} 
+                 cities={currentCities} 
+                 paginate={paginate}/>
+            </Route>}
+            {<Route path="/shortlisted">
+                <ShortList
+                 cities={props.cities} 
+                 newsPerPage={newsPerPage} 
+                 totalNews={props.cities.length} 
+                 shortcities={currentCities} 
+                 paginate={paginate}/>
+            </Route>}
         </div>
     )
 }

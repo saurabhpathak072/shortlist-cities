@@ -9,7 +9,6 @@ import { addnewcity, showmodal } from '../../Storage/actionCreators/actionCreato
 const Navigations = (props) => {
     return (
         <div>
-            
         <div className="navigation">
         <div className="navigation__addnew">
         <Button onClick={props.ishowmodal} variant="contained" color="primary">

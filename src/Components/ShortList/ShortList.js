@@ -3,7 +3,6 @@ import AllCitiesContainer from '../AllCitiesContainer/AllCitiesContainer';
 import './ShortList.css';
 const ShortList = (props) => {
    
-
     return (
         <div>
             <div className='allcities'>
@@ -27,8 +26,6 @@ const ShortList = (props) => {
                 else{
                     return null;
                 }
-                
-                
             })}
             </table>
         </div>
