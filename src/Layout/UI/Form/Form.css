@@ -1,0 +1,30 @@
+.form{
+    display: block;
+    width: 100%;
+}
+.form h3{
+    text-align: center;
+    
+    margin: 15px auto;
+}
+
+.form  input{
+    outline: 0;
+    width: 40%;
+}
+.form select{
+    outline: 0;
+    width: 40%;
+}
+
+.form__field{
+    display: flex;
+    margin: 10px;
+}
+
+.form__field > label{
+    width: 50%;
+}
+.form__button{
+    text-align: center;
+}

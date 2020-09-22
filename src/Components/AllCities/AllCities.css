@@ -1,0 +1,20 @@
+.allcities{
+    overflow: auto;
+    margin: 35px;
+}
+table {
+
+  text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    
+  }
+  
+  th, td {
+    
+    text-align: center;
+    padding: 8px;
+   
+  }
+  
+  tr:nth-child(even) {background-color: #f2f2f2;}

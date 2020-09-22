@@ -1,0 +1,31 @@
+.navigation{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    background-color: skyblue;
+    padding: 20px;
+}
+.navigation__list a{   
+    padding: 10px;
+    margin: 10px;
+    font-size: large;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}
+
+.navigation__list a:hover{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: white;
+    color: skyblue;
+}
+
+.navigation__addnew{
+    color: white;
+    display: flex;
+    flex: 1;
+    align-self: start;
+}

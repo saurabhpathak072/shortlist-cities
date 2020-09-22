@@ -1,0 +1,24 @@
+.paginations{
+    display: flex;
+    list-style: none;
+    width: 80%;
+    height: auto;
+
+
+    
+}
+.pagescontainer{
+
+    width: 100%;
+    overflow: auto;
+}
+
+.paginations li{
+    /* display: inline; */
+    margin: 30px;
+    cursor: pointer;
+}
+
+/* .paginations li{
+    margin: 30px;
+} */
